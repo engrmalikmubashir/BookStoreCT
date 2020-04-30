@@ -21,13 +21,18 @@ namespace BookStore.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Title = "Engr Malik Mubashir";
-            dynamic data = new ExpandoObject();
-            data.Id = 1;
-            data.Name = "Mubashir";
-            ViewBag.Data = data;
+            // ViewBag.Title = "Engr Malik Mubashir";
+            // dynamic data = new ExpandoObject();
+            // data.Id = 1;
+            // data.Name = "Mubashir";
+            // ViewBag.Data = data;
+            //
+            // ViewBag.Type = new BookModel() { Id = 5, Author = "This is Mubashir" };
 
-            ViewBag.Type = new BookModel() { Id = 5, Author = "This is Mubashir" };
+            // todo ViewData
+            // ViewData["propert1"] = "Malik Mubashir";
+            //
+            // ViewData["book"] = new BookModel() { Author = "Mubashir", Id = 1 };
 
             return View();
         }
